@@ -30,6 +30,7 @@ name = MY_FILE
 itchio = USERNAME/TEST-GAME
 ```
 ⚠ itch.io tends to convert the name of the project when there's underscores in it, replacing them with hyphens, so make sure you use the one that's shown in the URL and not the actual project name
+
 ⚠ also, make sure you created the project on itch.io before you deploy to it, because butler doesn't create it for you
 
 ## How to run
