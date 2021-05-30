@@ -13,7 +13,7 @@ folder = project
 include ${folder}/Makefile
 
 # path to the pico8 executable
-path = PATH_TO_PICO_EXECUTABLE
+pico8 = PATH_TO_PICO_EXECUTABLE
 fullname = ${folder}/${name}
 
 all: web bin
