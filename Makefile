@@ -1,6 +1,6 @@
 # Download and install `butler` first, and run `butler login` before you run this
 #
-# Add a Makefile at ${folder}/Makefile, and define:
+# Add a Makefile at ${project}/Makefile, and define:
 #
 # name of the .p8 itself
 # name = hello_world
@@ -9,12 +9,12 @@
 # itchio = user/game
 
 # name of the folder containing the .p8
-folder = project
-include ${folder}/Makefile
+project = project
+include ${project}/Makefile
 
 # path to the pico8 executable
 pico8 = PATH_TO_PICO_EXECUTABLE
-fullname = ${folder}/${name}
+fullname = ${project}/${name}
 
 all: web bin
 
@@ -38,10 +38,10 @@ deploy_windows: bin
 	
 web: check_label clean_web
 	${pico8} ${fullname}.p8 -export ${name}.html
-	mv ${name}.html ${folder}/index.html
-	mv ${name}.js ${folder}/
-	cd ${folder} && zip ${name}.zip index.html ${name}.js
-	cd ${folder} && rm -r ${name}.js index.html
+	mv ${name}.html ${project}/index.html
+	mv ${name}.js ${project}/
+	cd ${project} && zip ${name}.zip index.html ${name}.js
+	cd ${project} && rm -r ${name}.js index.html
 
 bin: check_label clean_bin
 	${pico8} ${fullname}.p8 -export ${name}.bin
@@ -51,8 +51,8 @@ clean: clean_web clean_bin
 
 clean_web:
 	rm -f ${fullname}.zip
-	rm -f ${folder}/*.js
-	rm -f ${folder}/*.html
+	rm -f ${project}/*.js
+	rm -f ${project}/*.html
 
 clean_bin:
 	rm -rf ${fullname}.bin
