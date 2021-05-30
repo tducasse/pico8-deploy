@@ -50,7 +50,8 @@ to run the operation `TARGET` on the project `FOLDER_NAME`.
 - **clean**: removes the exports for both `web` and `bin`
 - **clean_web**: removes the exports for `web`
 - **clean_bin**: removes the exports for `bin`
-Or just have a read! 😉
+ 
+Or just have a read through the Makefile! 😉
 
 Feel free to modify it however you want, and let me know if you come up with something cool, I'll be happy to integrate it to this project!
 
