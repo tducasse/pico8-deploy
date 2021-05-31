@@ -33,6 +33,8 @@ itchio = USERNAME/TEST-GAME
 
 ⚠ also, make sure you created the project on itch.io before you deploy to it, because butler doesn't create it for you
 
+ℹ I'd recommend setting the size of your HTML embed on itch.io to 780x680 to get nice looking margins 😀
+
 ## How to run
 In the root carts folder, run
 ```sh
