@@ -52,6 +52,7 @@ to run the operation `TARGET` on the project `FOLDER_NAME`.
 - **clean**: removes the exports for both `web` and `bin`
 - **clean_web**: removes the exports for `web`
 - **clean_bin**: removes the exports for `bin`
+- **count**: count the number of characters in your .lua files
  
 Or just have a read through the Makefile! 😉
 
