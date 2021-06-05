@@ -60,4 +60,7 @@ clean_bin:
 check_label:
 	grep -q __label__ ${fullname}.p8
 
-.PHONY: all deploy deploy_all deploy_web deploy_os deploy_linux deploy_mac deploy_windows web clean clean_web clean_bin check_label
+count:
+	wc -m ${name}/*lua
+
+.PHONY: all deploy deploy_all deploy_web deploy_os deploy_linux deploy_mac deploy_windows web clean clean_web clean_bin check_label count
