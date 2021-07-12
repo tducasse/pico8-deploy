@@ -3,7 +3,7 @@
 [PICO-8](https://www.lexaloffle.com/pico-8.php) is super minimalistic. While that's a good thing for development, deploying and rebuilding a project can be a bit involved.
 
 ## What this project does
-This repo contains a single Makefile, which tries to provide a few useful targets to build and deploy a project (to [itch.io](https://itch.io/)).
+This repo contains a single Makefile, which tries to provide a few useful targets to build and deploy a project PICO-8 (to [itch.io](https://itch.io/)).
 
 ## Prerequisites
 - a standard version of Make for your system
